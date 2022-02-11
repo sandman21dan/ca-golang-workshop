@@ -1,0 +1,9 @@
+version: "3"
+
+services:
+  go_runner:
+    image: golang:1.17
+    container_name: go-runner
+    volumes:
+      - ./:/workidir
+    command: tail -f /dev/null
