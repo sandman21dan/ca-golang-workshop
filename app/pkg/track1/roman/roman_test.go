@@ -4,7 +4,7 @@ import (
 	"fmt"
 	"testing"
 
-	"git.ivxs.uk/daniel.perez/ca-golang-workshop/app/pkg/roman"
+	"git.ivxs.uk/daniel.perez/ca-golang-workshop/app/pkg/track1/roman"
 )
 
 func TestRomanNumerals(t *testing.T) {
