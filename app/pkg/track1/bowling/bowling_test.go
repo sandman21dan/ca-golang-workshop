@@ -24,7 +24,12 @@ func TestCalculateBowlingScore(t *testing.T) {
 		},
 		{
 			name:          "perfect game",
-			game:          "X- X- X- X- X- X- X- X- X- X-",
+			game:          "X- X- X- X- X- X- X- X- X- XX X-",
+			expectedScore: 300,
+		},
+		{
+			name:          "perfect game",
+			game:          "5/ 5/ 5/ 5/ 5/ 5/ 5/ 5/ 5/ 5/ 5",
 			expectedScore: 300,
 		},
 	}
