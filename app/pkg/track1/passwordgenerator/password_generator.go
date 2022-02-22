@@ -7,7 +7,7 @@ type GeneratePasswordOptions struct {
 	SpecialCharacters bool
 }
 
-func GeneratePassword(length int, opt GeneratePasswordOptions) string {
+func GeneratePassword(length int, opt GeneratePasswordOptions) (string, error) {
 	// Your code here
-	return ""
+	return "", nil
 }
