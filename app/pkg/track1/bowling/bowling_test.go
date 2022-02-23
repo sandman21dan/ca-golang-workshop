@@ -28,9 +28,9 @@ func TestCalculateBowlingScore(t *testing.T) {
 			expectedScore: 300,
 		},
 		{
-			name:          "perfect game",
+			name:          "all spares with a final 5",
 			game:          "5/ 5/ 5/ 5/ 5/ 5/ 5/ 5/ 5/ 5/ 5",
-			expectedScore: 300,
+			expectedScore: 150,
 		},
 	}
 
