@@ -11,6 +11,25 @@ var charMap = map[string]int{
 }
 
 func ToDecimal(roman string) int {
-	// Your code here
-	return 0
+	// Convert the roman string to a slice of integers
+	n := []int{}
+	for _, c := range roman {
+		// Use string() to convert from rune to string
+		n = append(n, charMap[string(c)])
+	}
+
+	// start acumulator at zero
+	r := 0
+
+	for i, v := range n {
+		// if the next value is greater than the current value,
+		// it means we need to substract the current value
+		if i+1 < len(n) && v < n[i+1] {
+			r -= v
+		} else {
+			r += v
+		}
+	}
+
+	return r
 }
