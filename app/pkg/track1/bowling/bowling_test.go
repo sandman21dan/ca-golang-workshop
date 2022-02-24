@@ -19,12 +19,12 @@ func TestCalculateBowlingScore(t *testing.T) {
 		},
 		{
 			name:          "no strike or spare",
-			game:          "6- 3- 5- 3- 6- 10- 8- 1- 9- 0-",
-			expectedScore: 51,
+			game:          "6- -3 5- -3 6- -1 8- 1- -9 --",
+			expectedScore: 42,
 		},
 		{
 			name:          "perfect game",
-			game:          "X- X- X- X- X- X- X- X- X- XX X-",
+			game:          "X X X X X X X X X X X X",
 			expectedScore: 300,
 		},
 		{

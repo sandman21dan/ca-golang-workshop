@@ -3,7 +3,7 @@
 This is a repository that contains basic scaffolding to be able to follow along the
 Go workshop for the NASA event
 
-Welcome to NASA's hackathon
+Welcome to NASA's hackathon/workshop
 
 We'll be challenging you to solve some problems using GoLang
 
@@ -119,12 +119,13 @@ go test -run ^TestRomanNumerals$ ./...
 
 Create a function correctly calculates a bowling score sheet
 
-No validation is expected, asume the right amount of bowling cells are provided
+No validation is expected, assume the right amount of bowling cells are provided
+and no illegal combinations are provided
 
 Function should work as follows
 
 ```go
-bowling.CalculateBowlingScore("X- X- X- X- X- X- X- X- X- XX X-") // 300
+bowling.CalculateBowlingScore("X X X X X X X X X X X X") // 300
 ```
 
 More info on bowling scoring [here](https://codingdojo.org/kata/Bowling/)
@@ -141,7 +142,7 @@ go test -run ^TestCalculateBowlingScore$ ./...
 
 Create a function that randomly generates passwords
 
-The function takes an int as first argument for lenght and
+The function takes an int as first argument for length and
 an option `struct` as a second argument that controls the options
 of the password to be generated
 
@@ -149,7 +150,7 @@ At least one character of each type passed in the options is expected to be
 in the generated password
 
 Don't worry about producing cryptographically secure randomness any kind
-of random function sufices for this exercise
+of random function suffices for this exercise
 
 Function should work as follows
 
