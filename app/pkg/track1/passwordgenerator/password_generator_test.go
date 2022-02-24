@@ -29,7 +29,7 @@ func TestGeneratePassword(t *testing.T) {
 			name: "should have only 8 letters",
 			len:  8,
 			opt: passwordgenerator.GeneratePasswordOptions{
-				Digits: true,
+				Letters: true,
 			},
 			expected:    []string{`[a-z]{8}`},
 			notExpected: []string{`[\dA-Z$%&*#@]+`},
