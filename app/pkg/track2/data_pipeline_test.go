@@ -2,12 +2,14 @@ package pipeline
 
 import (
 	"fmt"
+	"log"
 	"testing"
 	"time"
 )
 
 func processPipeline() {
 	fileName := "./data.csv.gz"
+	log.Println("Reading from file", fileName)
 }
 
 func TestProcessPipeline(t *testing.T) {

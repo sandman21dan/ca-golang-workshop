@@ -162,3 +162,25 @@ Run test cases
 ```sh
 go test -run ^TestGeneratePassword$ ./...
 ```
+
+### Track 2
+
+This track is more advanced and free hand
+
+It's about processing data in a concurrent data pipeline style
+
+First we need to generate the data we're going to work with,
+to simplify things we can run the data generator as a test
+
+```sh
+go test --timeout 40s -v -run ^TestGenerateData$ ./...
+```
+
+The data is a gzipped CSV with two columns of randomly generated ints
+
+The task is to read the CSV (in a buffered manner ideally) and perform
+the following calculation in each row (col1 * col2)^2
+then calculate the mean average of those results
+
+Reading a CSV is similar to how to write one, you can use [this](./app/pkg/track2/generate_data_test.go)
+for reference
